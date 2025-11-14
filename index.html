@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Psychodelic Team — Coletivo de OSINT & Defesa Digital</title>
+  <meta name="description" content="Psychodelic Team — Coletivo descentralizado de OSINT, educação e ferramentas open-source para mapear ameaças digitais de forma legal e responsável." />
+  <meta property="og:title" content="Psychodelic Team — Coletivo de OSINT & Defesa Digital" />
+  <meta property="og:description" content="Coletivo descentralizado: OSINT, educação, ferramentas open-source e relatórios públicos. Não praticamos atividades ilegais." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ψ</text></svg>"> 
+  <style>
+    :root{
+      --bg:#071124;--card:#0b1320;--muted:#94a3b8;--accent:#7c3aed;--glass:rgba(255,255,255,0.04);
+      --accent-2:#06b6d4;--neon:0 6px 30px rgba(124,58,237,0.12);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#041025 0%, #061627 60%);color:#e6eef8}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;background:linear-gradient(135deg,var(--accent),var(--accent-2));border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:var(--neon)}
+    .logo span{font-weight:700;font-size:26px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+    nav a.cta{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:10px 14px;border-radius:10px;color:white}
+    main{margin-top:28px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .hero h1{font-size:34px;margin:0 0 10px 0;line-height:1.02}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:12px;backdrop-filter:blur(6px);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    .cta-row{display:flex;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit;text-decoration:none}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));border:none}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .feature h4{margin:0 0 6px 0}
+    .projects{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    footer{margin-top:34px;padding:18px;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+    code{background:var(--glass);padding:6px;border-radius:6px;color:#b7dff7}
+    .muted{color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:960px){.hero{grid-template-columns:1fr;}.projects,.features{grid-template-columns:1fr}.logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo card"><span>ψ</span></div>
+        <div>
+          <div style="font-weight:700">Psychodelic Team</div>
+          <div class="muted" style="font-size:13px">Coletivo descentralizado • OSINT • Defesa digital</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Sobre</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contribute">Contribua</a>
+        <a class="cta" href="#manifesto">Manifesto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Psychodelic Team — ilumine o caos digital</h1>
+          <p>Nós somos um coletivo descentralizado dedicado a investigação por dados abertos (OSINT), educação em segurança digital e desenvolvimento de ferramentas open-source. Transparência, legalidade e impacto são nossas linhas mestras.</p>
+
+          <div class="card">
+            <div class="cta-row">
+              <a class="btn primary" href="#contribute">Entrar no GitHub</a>
+              <a class="btn" href="#join">Entrar no Telegram</a>
+              <a class="btn" href="#manifesto">Ler manifesto</a>
+            </div>
+            <div style="margin-top:12px;color:var(--muted);font-size:13px">Aviso legal: <strong>Não realizamos atividades ilegais.</strong> Todas as investigações e ferramentas respeitam dados públicos e disclosure responsável.</div>
+          </div>
+
+          <div class="features">
+            <div class="card feature">
+              <h4>OSINT legal</h4>
+              <div class="muted">Rastreamento e relatórios apenas com fontes abertas.</div>
+            </div>
+            <div class="card feature">
+              <h4>Tools Open-source</h4>
+              <div class="muted">Scripts, dashboards e automações públicas no GitHub.</div>
+            </div>
+            <div class="card feature">
+              <h4>Educação</h4>
+              <div class="muted">Workshops, guias e treinamentos comunitários.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin-top:0">Quadro rápido</h3>
+            <ul style="padding-left:18px;margin:10px 0;color:var(--muted)">
+              <li>Estrutura: descentralizada, sem hierarquia</li>
+              <li>Comunicação: Telegram (canal privado de estudo)</li>
+              <li>Repo: GitHub — projetos, guias e cases</li>
+              <li>Foco: OSINT, educação, ferramentas legais</li>
+            </ul>
+            <div style="font-size:13px;color:var(--muted)">Quer participar? <a href="#contribute" style="color:inherit;text-decoration:underline">Veja como contribuir</a></div>
+          </div>
+
+          <div style="height:16px"></div>
+
+          <div class="card">
+            <h4 style="margin:0">Boas práticas</h4>
+            <ol style="padding-left:18px;margin:10px 0;color:var(--muted)">
+              <li>Trabalhe só com dados públicos</li>
+              <li>Não publique dados pessoais sensíveis</li>
+              <li>Responsible disclosure para vulnerabilidades</li>
+              <li>Mantenha o foco na educação e prevenção</li>
+            </ol>
+          </div>
+        </aside>
+      </section>
+
+      <section id="manifesto" style="margin-top:28px">
+        <div class="card">
+          <h2>Manifesto</h2>
+          <p style="color:var(--muted)">Somos fragmentos de luz no ruído digital. Somos múltiplos, anônimos, caóticos e curiosos. A Psychodelic Team nasce como um coletivo descentralizado dedicado a mapear ameaças, educar a sociedade e construir ferramentas públicas para um ambiente digital mais seguro.</p>
+
+          <h3 style="margin-top:12px">Princípios</h3>
+          <ul style="color:var(--muted)">
+            <li>Legalidade: tudo baseado em fontes abertas e práticas consentidas.</li>
+            <li>Transparência: relatórios públicos e processos reprodutíveis.</li>
+            <li>Descentralização: ninguém manda em ninguém.</li>
+            <li>Responsabilidade: publicar somente o que não prejudica vítimas.</li>
+            <li>Colaboração: código aberto e documentação acessível.</li>
+          </ul>
+
+          <h3 style="margin-top:12px">Objetivos</h3>
+          <ol style="color:var(--muted)">
+            <li>Produzir relatórios de OSINT com metodologia clara.</li>
+            <li>Oferecer guias e treinamentos para populações vulneráveis.</li>
+            <li>Construir e manter ferramentas defensivas open-source.</li>
+            <li>Cooperar com órgãos quando apropriado e seguro.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="projects" style="margin-top:28px">
+        <h2 style="margin-bottom:8px">Projetos & Repositórios (exemplos)</h2>
+        <div class="projects">
+          <div class="card">
+            <h4>osint-starter</h4>
+            <div class="muted">Templates e checklists para investigações OSINT: metodologia, captura de evidências, citabilidade e geração de relatórios.</div>
+            <div style="margin-top:10px"><code>github.com/psychodelic/osint-starter</code></div>
+          </div>
+          <div class="card">
+            <h4>psyc-scrapers</h4>
+            <div class="muted">Coleção de scripts responsáveis para coleta de dados públicos (rate-limited, polite, com user-agent e logs).</div>
+            <div style="margin-top:10px"><code>github.com/psychodelic/psyc-scrapers</code></div>
+          </div>
+          <div class="card">
+            <h4>vuln-disclosure-kit</h4>
+            <div class="muted">Modelos de disclosure responsável, templates de contato e playbooks legais para reportar vulnerabilidades.</div>
+            <div style="margin-top:10px"><code>github.com/psychodelic/vuln-disclosure-kit</code></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contribute" style="margin-top:28px">
+        <div class="card">
+          <h2>Como contribuir</h2>
+          <p class="muted">O repositório é aberto para qualquer pessoa: siga as regras do CONTRIBUTING.md antes de abrir PRs.</p>
+
+          <h4 style="margin-top:10px">Passo a passo</h4>
+          <ol style="color:var(--muted)">
+            <li>Fork do repositório principal</li>
+            <li>Crie uma branch com <code>feat/sua-contrib</code></li>
+            <li>Inclua testes e documentação</li>
+            <li>Abra um Pull Request explicando a mudança</li>
+          </ol>
+
+          <h4 style="margin-top:10px">Canais</h4>
+          <p class="muted">Telegram (estudo e troca) • GitHub (código) • Mastodon/Matrix (divulgação e site)</p>
+
+          <div style="margin-top:12px">
+            <a class="btn primary" href="https://github.com/psychodelic" target="_blank">Abrir GitHub</a>
+            <a class="btn" href="#join">Link Telegram (privado)</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" style="margin-top:28px">
+        <div class="card">
+          <h2>Entrar no coletivo</h2>
+          <p class="muted">Para manter a descentralização e reduzir riscos, usamos um processo simples de triagem para novos membros: formulário curto + leitura do manifesto + canal de boas-vindas.</p>
+
+          <h4 style="margin-top:10px">Formulário</h4>
+          <p class="muted">(link para um formulário hospedado no GitHub/Ghost/Typeform — opcional)</p>
+
+          <h4 style="margin-top:10px">Regras básicas do grupo</h4>
+          <ul style="color:var(--muted)">
+            <li>Respeito e colaboração</li>
+            <li>Sem instruções para atividades ilegais</li>
+            <li>Proteção de dados de terceiros</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <div style="font-weight:700">Psychodelic Team</div>
+          <div class="muted" style="font-size:13px">Coletivo descentralizado • OSINT • defesa digital</div>
+        </div>
+        <div style="font-size:13px" class="muted">Repositório: <code>github.com/psychodelic</code> • Canal: Telegram (privado)</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Pequenas melhorias de UX: smooth scroll e ligação para âncoras
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        e.preventDefault(); const t=document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    });
+  </script>
+</body>
+</html>
